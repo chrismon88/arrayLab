@@ -97,7 +97,7 @@ for (let currency in rates) {
 //   have a good look at how the JSON is structured, and think about what loop(s) you'll need to write.
 
 
-        let nobel_prize_winners_2017 = {
+        let nobelPrizes = {
             "prizes": [
                 {
                     "year": "2017",
@@ -223,12 +223,15 @@ for (let currency in rates) {
         }
     }
 }
-//          let literatureNobelLaureate = nobel_prize_winners_2017.prizes[1].laureates[0]
-//             console.log(literatureNobelLaureate.firstname,literatureNobelLaureate.surname)}
-// let prizes = nobel_prize_winners_2017.prizes
-//     prizes.forEach(function (prize){
-//          console.log(prize.category)
-//     })
+console.log(nobelPrizes)
+          let literatureNobelLaureate = nobelPrizes.prizes[1].laureates[0]
+             console.log(literatureNobelLaureate.firstname,literatureNobelLaureate.surname)
+
+
+ let prizes = nobelPrizes.prizes
+     prizes.forEach(function (prize){
+          console.log(prize.category)
+     })
 
 
 
